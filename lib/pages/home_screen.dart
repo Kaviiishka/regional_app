@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:regional_app/components/navi_bar.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class Home_screen extends StatefulWidget {
   const Home_screen({Key? key}) : super(key: key);
@@ -82,7 +83,7 @@ class _Home_screenState extends State<Home_screen> {
                 ),
                 SizedBox(
                   //height: 40.h,
-                  width: 633.w,
+                  width: 590.w,
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -100,8 +101,12 @@ class _Home_screenState extends State<Home_screen> {
                       height: 16.h,
                     ),
                     Container(
-                      padding: EdgeInsets.fromLTRB(250.w, 300.h, 0.w, 0.h),
-                      color: Color.fromRGBO(229, 245, 246, 1),
+                      height: 300.h,
+                      width: 250.w,
+                      child: SfCalendar(
+                        view: CalendarView.month,
+                      ),
+                      //color: Color.fromRGBO(229, 245, 246, 1),
                     ),
                   ],
                 ),

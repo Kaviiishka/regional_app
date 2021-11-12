@@ -59,30 +59,37 @@ class _Navi_barState extends State<Navi_bar> {
                 color: Colors.black),
           ),
         ),
-        RaisedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, '/notification');
-          },
-          padding: EdgeInsets.all(0),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.r)),
-          child: Ink(
-            width: 90.w,
-            decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Color.fromARGB(255, 11, 126, 193),
-                      Color.fromARGB(255, 0, 255, 255)
-                    ]),
-                borderRadius: BorderRadius.circular(20.r)),
-            child: Container(
-              constraints: BoxConstraints(minWidth: 54.w, minHeight: 31.h),
-              alignment: Alignment.center,
-              child: const Text(
-                '1',
-                style: TextStyle(color: Colors.white),
+        Padding(
+          padding: EdgeInsets.fromLTRB(0, 0, 20.w, 0),
+          child: SizedBox(
+            width: 54.w,
+            height: 31.h,
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/notification');
+              },
+              padding: EdgeInsets.all(0),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.r)),
+              child: Ink(
+                width: 90.w,
+                decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Color.fromARGB(255, 11, 126, 193),
+                          Color.fromARGB(255, 0, 255, 255)
+                        ]),
+                    borderRadius: BorderRadius.circular(20.r)),
+                child: Container(
+                  constraints: BoxConstraints(minWidth: 54.w, minHeight: 31.h),
+                  alignment: Alignment.center,
+                  child: const Text(
+                    '1',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
               ),
             ),
           ),

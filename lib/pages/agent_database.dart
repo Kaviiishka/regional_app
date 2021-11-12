@@ -22,7 +22,7 @@ class _Agent_databaseState extends State<Agent_database> {
           ),
           Navi_bar(),
           Text(
-            'User database',
+            'Agent database',
             style: TextStyle(
               fontFamily: 'Comfortaa',
               fontWeight: FontWeight.w400,
@@ -38,7 +38,7 @@ class _Agent_databaseState extends State<Agent_database> {
             child: Row(
               children: <Widget>[
                 Text(
-                  'User name',
+                  'Agent name',
                   style: TextStyle(
                     fontFamily: 'Comfortaa',
                     fontWeight: FontWeight.w400,
@@ -50,7 +50,7 @@ class _Agent_databaseState extends State<Agent_database> {
                   width: 75.w,
                 ),
                 Text(
-                  'Policy number',
+                  'Employee number',
                   style: TextStyle(
                     fontFamily: 'Comfortaa',
                     fontWeight: FontWeight.w400,
@@ -130,6 +130,33 @@ class _Agent_databaseState extends State<Agent_database> {
               ],
             ),
           ),
+          SizedBox(
+            height: 230.h,
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(1062.w, 0.h, 10.w, 10.h),
+            child: SizedBox(
+              width: 150.w,
+              height: 50.h,
+              child: RaisedButton(
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, '/home_screen');
+                },
+                child: Text(
+                  'Back',
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.w700,
+                    fontSize: 14.sp,
+                    color: Color.fromRGBO(255, 255, 255, 1),
+                  ),
+                ),
+                color: Color.fromRGBO(160, 213, 244, 1),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(48.r)),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -156,7 +183,9 @@ class _Agent_databaseState extends State<Agent_database> {
       width: 150.w,
       height: 25.h,
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/agent_database_1');
+        },
         child: Text(
           'Details',
           style: TextStyle(

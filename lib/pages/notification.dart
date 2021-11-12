@@ -59,8 +59,10 @@ class _Notification_1State extends State<Notification_1> {
                     height: 50.h,
                     child: RaisedButton(
                       onPressed: () {
-                        Navigator.pushNamedAndRemoveUntil(
-                            context, '/review', (route) => false);
+                        Navigator.popAndPushNamed(
+                          context,
+                          '/summary_1',
+                        );
                       },
                       child: Text(
                         'Review',
@@ -101,7 +103,7 @@ class _Notification_1State extends State<Notification_1> {
                     child: RaisedButton(
                       onPressed: () {
                         Navigator.pushNamedAndRemoveUntil(
-                            context, '/review', (route) => false);
+                            context, '/summary_1', (route) => false);
                       },
                       child: Text(
                         'Review',
@@ -142,7 +144,7 @@ class _Notification_1State extends State<Notification_1> {
                     child: RaisedButton(
                       onPressed: () {
                         Navigator.pushNamedAndRemoveUntil(
-                            context, '/review', (route) => false);
+                            context, '/summary_1', (route) => false);
                       },
                       child: Text(
                         'Review',
