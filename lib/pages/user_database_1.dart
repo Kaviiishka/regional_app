@@ -17,9 +17,6 @@ class _User_database_1State extends State<User_database_1> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 296.w),

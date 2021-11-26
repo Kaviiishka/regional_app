@@ -16,9 +16,6 @@ class _Confirmation_3State extends State<Confirmation_3> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           SizedBox(
             height: 20.h,

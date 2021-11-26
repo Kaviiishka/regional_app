@@ -57,6 +57,31 @@ class _LoginState extends State<Login> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(48.r)),
                 ),
+              ),
+              SizedBox(
+                width: 100.w,
+              ),
+              SizedBox(
+                width: 150.w,
+                height: 50.h,
+                child: RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, '/create_account', (route) => false);
+                  },
+                  child: Text(
+                    'Create account',
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontWeight: FontWeight.w700,
+                      fontSize: 14.sp,
+                      color: Color.fromRGBO(255, 255, 255, 1),
+                    ),
+                  ),
+                  color: Color.fromRGBO(11, 126, 193, 1),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(48.r)),
+                ),
               )
             ],
           )

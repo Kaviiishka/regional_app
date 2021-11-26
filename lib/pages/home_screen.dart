@@ -17,9 +17,9 @@ class _Home_screenState extends State<Home_screen> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
+          // SizedBox(
+          //   height: 30.h,
+          // ),
           Navi_bar(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

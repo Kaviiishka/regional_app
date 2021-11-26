@@ -17,9 +17,6 @@ class _RejectedState extends State<Rejected> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

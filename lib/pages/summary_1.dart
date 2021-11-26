@@ -17,9 +17,6 @@ class _Summary_1State extends State<Summary_1> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           SizedBox(
             height: 20.h,

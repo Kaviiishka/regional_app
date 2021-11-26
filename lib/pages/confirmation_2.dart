@@ -17,9 +17,6 @@ class _Confirmation_2State extends State<Confirmation_2> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           SizedBox(
             height: 20.h,

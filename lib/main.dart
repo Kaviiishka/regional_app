@@ -7,6 +7,8 @@ import 'package:regional_app/pages/approved.dart';
 import 'package:regional_app/pages/confirmation_1.dart';
 import 'package:regional_app/pages/confirmation_2.dart';
 import 'package:regional_app/pages/confirmation_3.dart';
+import 'package:regional_app/pages/create_account.dart';
+import 'package:regional_app/pages/create_account1.dart';
 import 'package:regional_app/pages/driver_licene.dart';
 import 'package:regional_app/pages/home_screen.dart';
 import 'package:regional_app/pages/insurance_card.dart';
@@ -47,6 +49,8 @@ void main() => runApp(ScreenUtilInit(
           '/confirmation_2': (context) => Confirmation_2(),
           '/confirmation_3': (context) => Confirmation_3(),
           '/rejection': (context) => Rejection(),
+          '/create_account': (context) => Create_account(),
+          '/create_account1': (context) => Create_account1(),
         },
       ),
     ));

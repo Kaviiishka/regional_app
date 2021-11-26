@@ -16,59 +16,61 @@ class _Sign_inState extends State<Sign_in> {
       backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 84.h),
-        child: Column(
-          children: [
-            Container(
-              height: 400.h,
-              width: 500.h,
-              color: Color.fromRGBO(239, 250, 251, 1),
-              child: Column(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 400.h,
+                width: 500.h,
+                color: Color.fromRGBO(239, 250, 251, 1),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 77.h,
+                    ),
+                    Container(child: InputBox(text: 'User name', isObs: false)),
+                    SizedBox(
+                      height: 44.h,
+                    ),
+                    InputBox(text: 'Password', isObs: true),
+                    SizedBox(
+                      height: 50.h,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 63.h,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: 77.h,
-                  ),
-                  Container(child: InputBox(text: 'User name', isObs: false)),
-                  SizedBox(
-                    height: 44.h,
-                  ),
-                  InputBox(text: 'Password', isObs: true),
-                  SizedBox(
+                    width: 150.w,
                     height: 50.h,
+                    child: RaisedButton(
+                      onPressed: () {
+                        Navigator.pushNamedAndRemoveUntil(
+                            context, '/home_screen', (route) => false);
+                      },
+                      child: Text(
+                        'Sign in',
+                        style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontWeight: FontWeight.w700,
+                          fontSize: 14.sp,
+                          color: Color.fromRGBO(255, 255, 255, 1),
+                        ),
+                      ),
+                      color: Color.fromRGBO(11, 126, 193, 1),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(48.r)),
+                    ),
                   ),
                 ],
-              ),
-            ),
-            SizedBox(
-              height: 63.h,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  width: 150.w,
-                  height: 50.h,
-                  child: RaisedButton(
-                    onPressed: () {
-                      Navigator.pushNamedAndRemoveUntil(
-                          context, '/home_screen', (route) => false);
-                    },
-                    child: Text(
-                      'Sign in',
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w700,
-                        fontSize: 14.sp,
-                        color: Color.fromRGBO(255, 255, 255, 1),
-                      ),
-                    ),
-                    color: Color.fromRGBO(11, 126, 193, 1),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(48.r)),
-                  ),
-                )
-              ],
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );

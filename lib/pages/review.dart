@@ -17,9 +17,6 @@ class _ReviewState extends State<Review> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -104,7 +101,7 @@ class _ReviewState extends State<Review> {
                       ),
                     ),
                     SizedBox(
-                      height: 16.h,
+                      height: 10.h,
                     ),
                     Container(
                       height: 300.h,

@@ -17,9 +17,6 @@ class _Agent_databaseState extends State<Agent_database> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           Text(
             'Agent database',

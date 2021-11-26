@@ -17,9 +17,6 @@ class _RejectionState extends State<Rejection> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(
-            height: 30.h,
-          ),
           Navi_bar(),
           SizedBox(
             height: 20.h,
